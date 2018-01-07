@@ -1,0 +1,11 @@
+id,name,brand,camera,ram,memory,battery,price
+1,Redmi Note,Xiaomi,8,2,16,3000,9999
+2,Iphone 6,Apple,13,3,32,3500,40000
+3,Honor 5c,Honor,13,2,16,3000,10999
+4,Lenovo K4,Lenovo,15,3,16,2900,8999
+5,Moto G4,Motorola,13,3,32,3000,14000
+6,One plus 3,One plus,21,4,32,3500,29000
+7,One plus 2,One plus,13,3,16,3000,22000
+8,Iphone 5,Apple,8,2,16,2700,20000
+9,Lenovo A6000,Lenovo,8,3,16,2500,6000
+10,Mi 4i,Xiaomi,13,2,16,2900,11999

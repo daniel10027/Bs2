@@ -1,0 +1,58 @@
+<!doctype html>
+<html ng-app="app">
+  <head>
+    {% load staticfiles %}
+     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-touch.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-animate.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script src="{% static "BDACtrl.js" %}"></script>
+
+    <style type="text/css">
+      .grid {
+            width: 1000px;
+            height: 500px;
+            }
+    </style>
+  </head>
+
+  <body>
+    <div ng-controller="BDACtrl">
+    <div class="container col-md-2"></div>
+      <div class="container col-md-8">
+        <h2><center>Django Plugin for Data Analytics</center></h2>
+        <div class="panel panel-default">
+          <div class="panel-heading">Enter Details</div>
+          <div class="panel-body">
+
+          <div class="row">
+            <div class="form-group col-md-10">
+              <label for="filepath">Enter File Path:</label>
+              <input type="text" class="form-control" ng-model="filepath" id="filepath" placeholder="Enter filepath">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group col-md-10">
+              <label for="filepath">Enter Index:</label>
+              <input type="text" class="form-control" ng-model="index" id="filepath" placeholder="Enter Index">
+            </div>
+          </div>
+
+      
+          <div class="row form-group col-md-10">          
+              <input type="button" class="btn btn-primary" ng-click="submit()" value="Submit">
+              <input type="button" class="btn btn-default" ng-click="clear()" value="Clear">        
+          </div>
+        
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+  </body>
+</html>
